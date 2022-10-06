@@ -39,11 +39,5 @@ def read_data():
         return [X, author_sparse]
 
 
-def save_data(data):
-    with open('../Data/train.pickle', 'wb') as fw:
-        pickle.dump(data, fw)
-
-
 if __name__ == "__main__":
     data = read_data()
-    save_data(data)
